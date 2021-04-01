@@ -1,0 +1,23 @@
+package recursion;
+
+public class rec {
+	 public static double exp(double a, int n)
+	   {
+	       // Checking condition for stopping the recursion
+	if(n<=0)
+	{
+	return 1;
+	}
+	else
+	{
+	// recursive call to exponent function   
+	return a * exp(a,n-1);
+	}
+	   }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double result = exp(2,4);
+		System.out.println("The value of 2^4 is "+result);
+	}
+
+}
